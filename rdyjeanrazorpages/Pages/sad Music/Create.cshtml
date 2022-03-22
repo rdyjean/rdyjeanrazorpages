@@ -1,0 +1,49 @@
+﻿@page
+@model rdyjeanrazorpages.Pages.Jane.CreateModel
+
+@{
+    ViewData["Title"] = "Sad Music";
+}
+
+<h1>Malaya kana</h1>
+
+<h4>Sad Music</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Class.Sad Music" class="control-label"></label>
+                <input asp-for="Class.Sad Music" class="form-control" />
+                <span asp-validation-for="Class.Sad Music" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Class.tagalog sad Song" class="control-label"></label>
+                <input asp-for="Class.Tagalog sad Song" class="form-control" />
+                <span asp-validation-for="Class.Tagalog sad Song" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Class.english sad song" class="control-label"></label>
+                <input asp-for="Class.english sad song" class="form-control" />
+                <span asp-validation-for="Class.english sad song" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Class.About" class="control-label"></label>
+                <input asp-for="Class.about" class="form-control" />
+                <span asp-validation-for="Class.about" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Sad Music">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
